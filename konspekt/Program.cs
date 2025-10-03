@@ -2,6 +2,7 @@
 
 //1. tuvasta sisu võrdluses tühja stringiga, string andmetüüp
 using System.ComponentModel.Design;
+using System.Reflection.Metadata;
 
 Console.WriteLine("Tere kasutaja, kuidas on sinu nimi?: ");
 string nimi = Console.ReadLine();
@@ -240,3 +241,42 @@ else if (valik == "kast")
         Console.WriteLine($"Sinu kast mahutab {V} \nkasti küljepindala on {kogupindala} \ndiagonaal aga on {diagonaal}");
     }
 }
+
+Console.WriteLine("banana");
+// Console -> adreseeritav moodul või objekt (roheline).
+// . -> midagi selle objekti seest, sarnanane windowsi kausta pathis oleva slashiga.
+//      - komakohtadega andmetüüpidel komakoha tähistamine
+// WrtieLine -> adreseeritav funktsioon objektist Console.
+// () -> sulupaar, mis omab endas funktsioonile vajalikku infot.
+//      - kasutatakse ka metamaaatilistes tehetes
+//      - saab kasutada ka if tingimuslauses oleva tingimuse piiramiseks, ehk teisisõnu "IFi parameeter".
+// [] -> tähistab massiive.
+// {} -> koodiplokk, tavaliselt pärast tingimust või funktsiooni kirjeldust.
+//      - saab ka kasutada teksti sees muutujate kuvamiseks.
+// -> taane aitab arendajal aru saada millise koodiplokki sees, miski on. Vajalik on kompilatoore.
+//"Banana" -> parameeter, mis antakse funktsioonile WriteLine töötlemiseks kaasa.
+// ; -> iga koodilause lõppeb komakooloniga.
+
+int muutuja = 3;
+// int -> muutuja nime ees olev andmetüübi kirjeldus. See näitab ära mis tüübi andmed selle muutuja sees on.
+// = -> Võrdusmärk omistab sellele muutujale mingisuguse väärtuse.
+// 3 -> väärtus, mis sellele omistatakse
+
+//võimalikud andmetüübid:
+int a = 1; // täisarv
+decimal b = 2.0M; // kümnendsüsteemis olev komakohaga arv
+float c = 3.0f; //kümnendsüsteemis olev ujukomaga arv
+double d = 4.0d; // kümnendsüsttemis olev komakohaga arv, sarnane decimeliga
+char c1 = 'a'; // uksainus täht või tähemärk
+string s = "tekst"; // inimloetaval kujul olev tekst
+var x = "abc"; // ebamäärase tüübiga kohalik muutuja.
+var y = 123;
+const int z = 3; // konstati-tüüpi muutujaid ei saa muuta, need on read-only
+
+//põhilised matemaatilised tehted
+int liitmine = 1 + 1; //liitmine, kaks arvu kokku
+int lahutamine = 1 - 1; //lahutamine, esimene arv teisest
+int korrutamine = 1 * 1; //korrutamine, esimene arv korratakse teisega
+int jagamine = 1 / 1; // jagamine, esimene arv jagatakse teisega
+double astendamine = Math.Pow(2, 2); //astendamine, esimene arv astendakse teisega
+double juurimine = Math.Sqrt(2); // ruutjuur, parameetriks arv mida juuritakse
