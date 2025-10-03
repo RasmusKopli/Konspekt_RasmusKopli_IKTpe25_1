@@ -248,14 +248,15 @@ Console.WriteLine("banana");
 //      - komakohtadega andmetüüpidel komakoha tähistamine
 // WrtieLine -> adreseeritav funktsioon objektist Console.
 // () -> sulupaar, mis omab endas funktsioonile vajalikku infot.
-//      - kasutatakse ka metamaaatilistes tehetes
+//      - kasutatakse ka metamaaatilistes tehtedes
 //      - saab kasutada ka if tingimuslauses oleva tingimuse piiramiseks, ehk teisisõnu "IFi parameeter".
 // [] -> tähistab massiive.
 // {} -> koodiplokk, tavaliselt pärast tingimust või funktsiooni kirjeldust.
 //      - saab ka kasutada teksti sees muutujate kuvamiseks.
 // -> taane aitab arendajal aru saada millise koodiplokki sees, miski on. Vajalik on kompilatoore.
 //"Banana" -> parameeter, mis antakse funktsioonile WriteLine töötlemiseks kaasa.
-// ; -> iga koodilause lõppeb komakooloniga.
+// ; -> iga koodilause lõppeb komakooloniga
+// // -> komentaaritingmärk üherealise kommentaari jaosk
 
 int muutuja = 3;
 // int -> muutuja nime ees olev andmetüübi kirjeldus. See näitab ära mis tüübi andmed selle muutuja sees on.
@@ -280,3 +281,4 @@ int korrutamine = 1 * 1; //korrutamine, esimene arv korratakse teisega
 int jagamine = 1 / 1; // jagamine, esimene arv jagatakse teisega
 double astendamine = Math.Pow(2, 2); //astendamine, esimene arv astendakse teisega
 double juurimine = Math.Sqrt(2); // ruutjuur, parameetriks arv mida juuritakse
+
