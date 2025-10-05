@@ -282,3 +282,38 @@ int jagamine = 1 / 1; // jagamine, esimene arv jagatakse teisega
 double astendamine = Math.Pow(2, 2); //astendamine, esimene arv astendakse teisega
 double juurimine = Math.Sqrt(2); // ruutjuur, parameetriks arv mida juuritakse
 
+// Iseseisev töö
+// int arv1 = 0; -> esimene muutuja ees olev andmetüübi kirjeldus
+// int arv2 = 0; -> teine muutuja ees olev andmetüübi kirjeldus
+// Console.WriteLine("Tere, palun sisesta esimene arv: "); -> küsib kasutajalt esimest arvu
+// arv1 = int.Parse(Console.ReadLine()); -> Loeb esimest arvu ja jätab meelde, et see on "Arv1"
+// Console.WriteLine("Tere, palun sisesta teine arv: "); -> Küsib kasutajalt teist arvu
+// arv2 = int.Parse(Console.ReadLine()); Loeb teist arvu ja jätab meelde, et see on "Arv2"
+// Console.WriteLine("Missugust tehet soovid teha? + - / *"); -> Küsib kasutajalt mis tehet ta tahab teha
+// string tehtetüüp = Console.ReadLine(); -> loeb mis tehtemärgi on kasutaja pandnud ja jätab selle arvutamiseks meelde
+// int tehe = 0; 
+//
+//if (tehtetüüp == "+" /*tingimus siia*/) -> kui tehtetüüp on "+"
+//{
+//    tehe = arv1 + arv2; liidab arv1 arv2'ga
+//}
+//if (tehtetüüp == "-") kui tehtetüüp on "-"
+//{
+//    tehe = arv1 - arv2; lahutab arv1 arv2'ga
+//}
+//if (tehtetüüp == "/") kui tehtetüüp on "/"
+//{
+//    tehe = arv1 / arv2; jagab arv1 arv2'ga
+//}
+//if (tehtetüüp == "*") kui tehtetüüp on "*"
+//{
+//    tehe = arv1 * arv2; korrutab arv1 arv2'ga
+//}
+//if (tehtetüüp == "^") kui tehtetüüp on "^"
+//{
+//    tehe = (int)Math.Pow(arv1, arv2); astendab arv1 arv2'ga
+//}
+//
+//
+//
+//
