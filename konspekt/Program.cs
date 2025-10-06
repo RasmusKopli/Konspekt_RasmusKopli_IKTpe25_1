@@ -82,38 +82,39 @@ else
 
 //3. kalkulaator ifi ja else-ifiga, int ja string andmetüübid.
 
-int arv1 = 0;
-int arv2 = 0;
-Console.WriteLine("Tere, palun sisesta esimene arv: ");
-arv1 = int.Parse(Console.ReadLine());
-Console.WriteLine("Tere, palun sisesta teine arv: ");
-arv2 = int.Parse(Console.ReadLine());
-Console.WriteLine("Missugust tehet soovid teha? + - / *");
-string tehtetüüp = Console.ReadLine();
-int tehe = 0;
 
-if (tehtetüüp == "+" /*tingimus siia*/)
-{
-    tehe = arv1 + arv2;
-}
-if (tehtetüüp == "-")
-{
-    tehe = arv1 - arv2;
-}
-if (tehtetüüp == "/")
-{
-    tehe = arv1 / arv2;
-}
-if (tehtetüüp == "*")
-{
-    tehe = arv1 * arv2;
-}
-if (tehtetüüp == "^")
-{
-    tehe = (int)Math.Pow(arv1, arv2);
-}
+//int arv1 = 0;
+//int arv2 = 0;
+//Console.WriteLine("Tere, palun sisesta esimene arv: ");
+//arv1 = int.Parse(Console.ReadLine());
+//Console.WriteLine("Tere, palun sisesta teine arv: ");
+//arv2 = int.Parse(Console.ReadLine());
+//Console.WriteLine("Missugust tehet soovid teha? + - / *");
+//string tehtetüüp = Console.ReadLine();
+//int tehe = 0;
 
-Console.WriteLine($"{tehtetüüp} Tehte tulemus: {tehe}");
+//if (tehtetüüp == "+" /*tingimus siia*/)
+//{
+//    tehe = arv1 + arv2;
+//}
+//if (tehtetüüp == "-")
+//{
+//    tehe = arv1 - arv2;
+//}
+//if (tehtetüüp == "/")
+//{
+//    tehe = arv1 / arv2;
+//}
+//if (tehtetüüp == "*")
+//{
+//    tehe = arv1 * arv2;
+//}
+//if (tehtetüüp == "^")
+//{
+//    tehe = (int)Math.Pow(arv1, arv2);
+//}
+
+//Console.WriteLine($"{tehtetüüp} Tehte tulemus: {tehe}");
 
 
 //4. parool if ja string andmetüüp
@@ -248,15 +249,14 @@ Console.WriteLine("banana");
 //      - komakohtadega andmetüüpidel komakoha tähistamine
 // WrtieLine -> adreseeritav funktsioon objektist Console.
 // () -> sulupaar, mis omab endas funktsioonile vajalikku infot.
-//      - kasutatakse ka metamaaatilistes tehtedes
+//      - kasutatakse ka metamaaatilistes tehetes
 //      - saab kasutada ka if tingimuslauses oleva tingimuse piiramiseks, ehk teisisõnu "IFi parameeter".
 // [] -> tähistab massiive.
 // {} -> koodiplokk, tavaliselt pärast tingimust või funktsiooni kirjeldust.
 //      - saab ka kasutada teksti sees muutujate kuvamiseks.
 // -> taane aitab arendajal aru saada millise koodiplokki sees, miski on. Vajalik on kompilatoore.
 //"Banana" -> parameeter, mis antakse funktsioonile WriteLine töötlemiseks kaasa.
-// ; -> iga koodilause lõppeb komakooloniga
-// // -> komentaaritingmärk üherealise kommentaari jaosk
+// ; -> iga koodilause lõppeb komakooloniga.
 
 int muutuja = 3;
 // int -> muutuja nime ees olev andmetüübi kirjeldus. See näitab ära mis tüübi andmed selle muutuja sees on.
@@ -280,40 +280,103 @@ int lahutamine = 1 - 1; //lahutamine, esimene arv teisest
 int korrutamine = 1 * 1; //korrutamine, esimene arv korratakse teisega
 int jagamine = 1 / 1; // jagamine, esimene arv jagatakse teisega
 double astendamine = Math.Pow(2, 2); //astendamine, esimene arv astendakse teisega
-double juurimine = Math.Sqrt(2); // ruutjuur, parameetriks arv mida juuritakse
+double juurimine = Math.Sqrt(2); // ruutjuur, parameetriks arv mida juuritaks
 
-// Iseseisev töö
-// int arv1 = 0; -> esimene muutuja ees olev andmetüübi kirjeldus
-// int arv2 = 0; -> teine muutuja ees olev andmetüübi kirjeldus
-// Console.WriteLine("Tere, palun sisesta esimene arv: "); -> küsib kasutajalt esimest arvu
-// arv1 = int.Parse(Console.ReadLine()); -> Loeb esimest arvu ja jätab meelde, et see on "Arv1"
-// Console.WriteLine("Tere, palun sisesta teine arv: "); -> Küsib kasutajalt teist arvu
-// arv2 = int.Parse(Console.ReadLine()); Loeb teist arvu ja jätab meelde, et see on "Arv2"
-// Console.WriteLine("Missugust tehet soovid teha? + - / *"); -> Küsib kasutajalt mis tehet ta tahab teha
-// string tehtetüüp = Console.ReadLine(); -> loeb mis tehtemärgi on kasutaja pandnud ja jätab selle arvutamiseks meelde
-// int tehe = 0; 
-//
-//if (tehtetüüp == "+" /*tingimus siia*/) -> kui tehtetüüp on "+"
-//{
-//    tehe = arv1 + arv2; liidab arv1 arv2'ga
-//}
-//if (tehtetüüp == "-") kui tehtetüüp on "-"
-//{
-//    tehe = arv1 - arv2; lahutab arv1 arv2'ga
-//}
-//if (tehtetüüp == "/") kui tehtetüüp on "/"
-//{
-//    tehe = arv1 / arv2; jagab arv1 arv2'ga
-//}
-//if (tehtetüüp == "*") kui tehtetüüp on "*"
-//{
-//    tehe = arv1 * arv2; korrutab arv1 arv2'ga
-//}
-//if (tehtetüüp == "^") kui tehtetüüp on "^"
-//{
-//    tehe = (int)Math.Pow(arv1, arv2); astendab arv1 arv2'ga
-//}
-//
-//
-//
-//
+//Ülesanne, kasutades süntaksiseletust, kirjelda kommentaariga iga koodirida
+
+int arv1 = 0;
+//arv1 nime ees olev andmetüübi kirjeldus
+//Võrdusmärk omistab sellele muutujale mingisuguse väärtuse
+//väärtus, mis sellele omistatakse
+int arv2 = 0;
+//arv2 nime ees olev andmetüübi kirjeldus
+//Võrdusmärk omistab sellele muutujale mingisuguse väärtuse
+//väärtus, mis sellele omistatakse
+Console.WriteLine("Tere, palun sisesta esimene arv: ");
+//adreseerime moodulit "console", punkti abil ütleme, et kasutame funktsiooni WriteLine, et kasutajale õelda sõnum
+//asub funktsiooni taga olevate sulgude vahel, antud rida lõppeb lauselõpumärgiga
+//iga koodilause lõppeb komakooloniga
+arv1 = int.Parse(Console.ReadLine());
+//Instantseerime muutuja "arv1", ninngmütleme, et sinna saab panna täisarve andmetüübisõnaga int, selle muutuja sisse omistame tulemuse
+//Mille saame kasutajalt console.readline() abil (kasutame moodulist "Console" realugemisfunktsiooni), ning teisendame int andmetüübis
+//asuva funktsiooni "parse" abil kasutajasisendi täisarvuks. Lause lõppeb lõpumärgiga
+Console.WriteLine("Tere, palun sisesta teine arv: ");
+//adreseerime moodulit "console", punkti abil ütleme, et kasutame funktsiooni WriteLine, et kasutajale õelda sõnum
+//asub funktsiooni taga olevate sulgude vahel, antud rida lõppeb lauselõpumärgiga
+//iga koodilause lõppeb komakooloniga
+arv2 = int.Parse(Console.ReadLine());
+//Instantseerime muutuja "arv1", ninngmütleme, et sinna saab panna täisarve andmetüübisõnaga int, selle muutuja sisse omistame tulemuse
+//Mille saame kasutajalt console.readline() abil (kasutame moodulist "Console" realugemisfunktsiooni), ning teisendame int andmetüübis
+//asuva funktsiooni "parse" abil kasutajasisendi täisarvuks. Lause lõppeb lõpumärgiga
+Console.WriteLine("Missugust tehet soovid teha? + - / *");
+//adreseerime moodulit "console", punkti abil ütleme, et kasutame funktsiooni WriteLine, et kasutajale õelda sõnum
+//asub funktsiooni taga olevate sulgude vahel, antud rida lõppeb lauselõpumärgiga
+//iga koodilause lõppeb komakooloniga
+
+string tehtetüüp = Console.ReadLine();
+//tekitame muutuja "tehetüüp", mille ette paneme andmetüübiks string ehk ütleme et seal on tekst, ning võrdusmärgi obil omistame talle
+//konsooli rea pealt loetu info, mis saame kasutades "Console"mooduli, Readline() funktsiooni. Lause lõppeb lauselõpumärgiga ; .
+//inimoleval kuju või tekst
+//sisestab ülevat moodule ja funktsioonile teatud nimetust
+int tehe = 0;
+//instateerime muutuja tulemus, mille andmetüübiks on int, ja omistame talle esialgu väärtuse 0.
+//lauselõpp lõppeb lauselõpumärgiga ; .
+
+if (tehtetüüp == "+" /*tingimus siia*/)
+//teeme tingimuslause if, ning sulgude vahele kirjutame tingimuseks kontrolli, kas muutuja "tehetüüp" sisu on samal kujul, kui sõna "+"
+{
+    //peale tingimust on koodiplokk {} loogeliste sulgude vahel. Koodiplokk sisaldab endas ühte rida, kus muutujasse tulemus omistatakse nüüd väärtus liites kokku
+    //muutuja arv1 ja arv2. lause lõppeb lauselõpumärgiga sulgude sees.
+    tehe = arv1 + arv2;
+}
+if (tehtetüüp == "-")
+//teeme tingimuslause if, ning sulgude vahele kirjutame tingimuseks kontrolli, kas muutuja "tehetüüp" sisu on samal kujul, kui sõna "-"
+{
+    //peale tingimust on koodiplokk {} loogeliste sulgude vahel. Koodiplokk sisaldab endas ühte rida, kus muutujasse tulemus omistatakse nüüd väärtus lahutades
+    //muutuja arv1 ja arv2. lause lõppeb lauselõpumärgiga sulgude sees.
+    tehe = arv1 - arv2;
+}
+if (tehtetüüp == "/")
+//teeme tingimuslause if, ning sulgude vahele kirjutame tingimuseks kontrolli, kas muutuja "tehetüüp" sisu on samal kujul, kui sõna "/"
+{
+    //peale tingimust on koodiplokk {} loogeliste sulgude vahel. Koodiplokk sisaldab endas ühte rida, kus muutujasse tulemus omistatakse nüüd väärtus jagatakse
+    //muutuja arv1 ja arv2. lause lõppeb lauselõpumärgiga sulgude sees.
+    tehe = arv1 / arv2;
+}
+if (tehtetüüp == "*")
+//teeme tingimuslause if, ning sulgude vahele kirjutame tingimuseks kontrolli, kas muutuja "tehetüüp" sisu on samal kujul, kui sõna "*"
+{
+    //peale tingimust on koodiplokk {} loogeliste sulgude vahel. Koodiplokk sisaldab endas ühte rida, kus muutujasse tulemus omistatakse nüüd väärtus korrutades kokku
+    //muutuja arv1 ja arv2. lause lõppeb lauselõpumärgiga sulgude sees.
+    tehe = arv1 * arv2;
+}
+if (tehtetüüp == "^")
+//teeme tingimuslause if, ning sulgude vahele kirjutame tingimuseks kontrolli, kas muutuja "tehetüüp" sisu on samal kujul, kui sõna "^"
+{
+    //peale tingimust on koodiplokk {} loogeliste sulgude vahel. Koodiplokk sisaldab endas ühte rida, kus muutujasse tulemus omistatakse nüüd väärtus kasutades
+    //moodulist "Math" punkti abil funktsiooni "Pow()", selle sees on arv1 astendatavana esimene parameeter, ning arv2 astendajana teine parameeter
+    //Funktsiooni ees on kiirteisendus kus funktsiooni väljund teisendatakse täisarvuks (Int) abil. Lause lõppeb lauselõpumärgiga sulgude sees.
+    tehe = (int)Math.Pow(arv1, arv2);
+}
+
+Console.WriteLine($"{tehtetüüp} Tehte tulemus: {tehe}");
+//adreseerime moodulit "Console", ning kasutame sealt funktsiooni "WriteLine" koos sulgude vahel parameetriga tulemus, et kuvada kasutajale tehte vastus.
+//Lause lõppeb lauselõpumärgiga.
+
+int arv = 0; //sobib
+string sõna = "abc"; // sobib
+//string string = "abc"
+
+//muutuja nimeks ei sobi järgnevad sõnad:
+//abstract, as, base, bool, break, byte, case,
+//catch, char, checked, class, const, continue, decimal,
+//default, delegate, do, double, else, enum, event,
+//explicit, extern, false, finally, fixe, float, for,
+//foreach, goto, if, implicit, in, int,
+//interface, internal, is, lock, long, namespace, new,
+//null, object, operator, out, override, params,
+//private, protected, public, readonly, ref, return, sbyte
+//sealed, short, sizeof, stackalloc, static, string, struct,
+//switch, this, throw, true, try, typeof, uint,
+//ulong, unchecked, unsfae, ushort, using, virtual, void,
+//volatile, while.
