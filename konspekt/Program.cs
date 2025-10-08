@@ -381,30 +381,47 @@ string sõna = "abc"; // sobib
 //ulong, unchecked, unsfae, ushort, using, virtual, void,
 //volatile, while.
 
-Console.WriteLine("Sisesta ostusumma: ");
-double ostusumma = double.Parse(Console.ReadLine());
-//kümnendsüsteemis olev komakohaga arv
-//Instantseerime muutuja "ostusumma" , ning ütlem, et sinna saab panna kümnendsüsteemis olevate arvudega
-// lause lõpu lauselõpp on komakoolon
-if (ostusumma > 100)
-//teeme tingimuslause if, ning sulgude vahele kirjutame tingimuseks kontrolli, kas muutuja "ostusumma" on suurem kui "100"
+//Console.WriteLine("Sisesta ostusumma: ");
+//double ostusumma = double.Parse(Console.ReadLine());
+////kümnendsüsteemis olev komakohaga arv
+////Instantseerime muutuja "ostusumma" , ning ütlem, et sinna saab panna kümnendsüsteemis olevate arvudega
+//// lause lõpu lauselõpp on komakoolon
+//if (ostusumma > 100)
+////teeme tingimuslause if, ning sulgude vahele kirjutame tingimuseks kontrolli, kas muutuja "ostusumma" on suurem kui "100"
+//{
+//    Console.WriteLine("Saad 20% allahindlust");
+//    //peale tingimust on koodiplokk {} loogeliste sulgude vahel. koodiplokk sisaldab endas ühte rida, kus muutujasse omistatakse nüüd väärtus kasutades
+//}
+//else if (ostusumma < 101 && ostusumma > 50)
+//{
+//    Console.WriteLine("Saad 10% allahindlust");
+//}
+//else if (ostusumma < 51 && ostusumma > 20)
+//{
+//    Console.WriteLine("Saad 5% allahindlust");
+//}
+//else if (ostusumma < 21)
+//{
+//    Console.WriteLine("Allahindlust ei saa");
+//}
+//else if (ostusumma < 1)
+//{
+//    Console.WriteLine("Sisestatud vigane arv");
+//}
+Console.WriteLine("Mis kujundit soovid täna arvutada? Kas Ruutu, Kolmnurka või Ringi? ");
+    string valik = Console.ReadLine();
+if (valik == "Ruut")
 {
-    Console.WriteLine("Saad 20% allahindlust");
-    //peale tingimust on koodiplokk {} loogeliste sulgude vahel. koodiplokk sisaldab endas ühte rida, kus muutujasse omistatakse nüüd väärtus kasutades
-}
-else if (ostusumma < 101 && ostusumma > 50)
-{
-    Console.WriteLine("Saad 10% allahindlust");
-}
-else if (ostusumma < 51 && ostusumma > 20)
-{
-    Console.WriteLine("Saad 5% allahindlust");
-}
-else if (ostusumma < 21)
-{
-    Console.WriteLine("Allahindlust ei saa");
-}
-else if (ostusumma < 1)
-{
-    Console.WriteLine("Sisestatud vigane arv");
+    Console.WriteLine("Kas tahad arvutada ruudu Pindala (P) või ümbermõõtu (S)?");
+    string PvõiS = Console.ReadLine();
+    Console.WriteLine("Palun sisesta mõõt");
+    double mõõt = double.Parse(Console.ReadLine());
+    if (PvõiS = "P")
+    {
+        mõõt = 4 * PvõiS;
+    }
+    if (PvõiS = "S")
+    {
+        Math.Pow(PvõiS, 2);
+    }
 }
