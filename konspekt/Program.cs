@@ -291,6 +291,10 @@ int[] arvumassiiv = new int[3]; //andmetüüp int väljandab, et tegu on täisar
 int[] arvumassiiv2 = [1, 2, 3]; //teine massiivi tekitusviis, kus järjendi pikkuise sätestamise asemel, pannakse elemendid kohe sisse
                                 //järjendi mikkus tuletatakse elementide arvust.
 
+// -- Massiivi sisemised meetodid
+int hasthismany = arvumassiiv.Length; //massiivi meetod ".Length" mille me saame võtta punkti abil, loendab kokku, mitu
+                                      //elementi järjendis parasjagu on.
+
 //põhilised matemaatilised tehted
 int liitmine = 1 + 1; //liitmine, kaks arvu kokku
 int lahutamine = 1 - 1; //lahutamine, esimene arv teisest
@@ -493,7 +497,7 @@ string beta = $"{alfa}"; // $  -> lubab kasutada muutujaid loogeliste suglude va
 /* Loogilised tehted */
 // && -> Loogiline tehe, mida kasutatakse tingimuste kirjutamisel, ning mis annab positiivse vastuse (true) juhul kui
 //      mõlemal pool && märki olevad tingimused on täidetud. Kui neist ei ole, siis annab negatiivse vastuse (false).
-// II -> loogiline tehe, mida kasutatakse tingimuste kirjutamisel, ninng mis annab positiivse vastuse, kui kõi tingimused on täitmata
+// || -> loogiline tehe, mida kasutatakse tingimuste kirjutamisel, ninng mis annab positiivse vastuse, kui kõi tingimused on täitmata
 //      vähemalt üks tingimus on täidetud. Negatiivne vasus (false) tagastatakse siis, kui kõik tingimused on täitmata
 // !  -> loogiline tehe, mida kasutatakse tingimuste tulemuste inverteerimiseks. Tulemus mis muidu tagastaks true, hüüumärgi
 //      puhul tagastab false ja vastupidi - tulemus mis muidu tagastaks false, hüüumärgi puhul tagastab true.
@@ -551,3 +555,4 @@ for (int k = 0; e < kogus; k++) //kaitstud sõna "for" alustab for tsüklim, pä
 {                               //koodiplokk, kus tehakse mingi tegevus
     Console.WriteLine(k);       //antud juhul on tegevuseks muutuja "k" arvu väljakuvamine
 }
+
